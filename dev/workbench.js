@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { Example } from "../src/index";
+import { SimpleList } from "../src/index";
 
 class Workbench extends React.Component {
 
@@ -12,9 +12,23 @@ class Workbench extends React.Component {
     }
 
     render() {
+        const items = [
+            {
+                label: "label1",
+                value: "value1"
+            },
+            {
+                label: "label2",
+                value: "value2"
+            },
+            {
+                label: "label3",
+                value: "value3"
+            },
+        ];
         return (
             <section className="test-area">
-                <Example label="Exemplo" />
+                <SimpleList list={items} label="Simple List" />
             </section>
         )
     }

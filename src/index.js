@@ -1,3 +1,3 @@
-import Example from "./lib/Example";
+import SimpleList from "./lib/SimpleList";
 
-export { Example };
+export { SimpleList };
