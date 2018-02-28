@@ -1,3 +1,3 @@
-import Example from "./lib/Example";
+import ExpandableBox from "./lib/ExpandableBox";
 
-export { Example };
+export { ExpandableBox };
