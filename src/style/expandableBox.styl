@@ -3,8 +3,30 @@
 	box-sizing border-box
 	.title
 		padding .5em
+		border: 4px
 		text-align center
 		cursor pointer
+		.up
+			transform: rotate(-135deg)
+			-webkit-transform: rotate(-135deg)
+			border: solid black
+			border-width: 0 3px 3px 0
+			display: inline-block
+			float: right 
+			padding: 3px;
+
+		.down
+			transform: rotate(-315deg)
+			-webkit-transform: rotate(-315deg)
+			border: solid black
+			border-width: 0 3px 3px 0
+			display: inline-block
+			float: right 
+			padding: 3px;
+			
+				
+	
+		
 	.line
 		height 1px
 		background-color grey
@@ -12,3 +34,4 @@
 		padding .5em
 		&.-closed
 			display none
+	

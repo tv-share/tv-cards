@@ -20,7 +20,7 @@ class Workbench extends React.Component {
 			<section className="test-area">
                 <div style={{ width: "300px", height: "300px" }} >
                     <ExpandableBox className="new" title="Título" isOpen={this.state.isOpen} clickAction={() => this.setState({ isOpen: !this.state.isOpen })} >
-                        <button>Botão</button>
+                      <center> "Conteúdo" </center>
                     </ExpandableBox>
                 </div>
 			</section>

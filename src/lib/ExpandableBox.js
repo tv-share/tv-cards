@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ExpandableBox = (props) => {
-	const { className = "", title, children, isOpen, clickAction } = props;
+const ExpandableBox = (className = "", title, children, isOpen, clickAction) => {
 	return (
 		<div className={`expandable-box ${className}`}>
-			<div className="title" onClick={clickAction}>{title}</div>
+			<div className="title" onClick={clickAction}>{title}
+				<p className = {isOpen ? "down" : "up"}> <i className="right"></i></p>			
+			</div>
 			{
 				isOpen ?
 				<span>
@@ -21,7 +22,9 @@ const ExpandableBox = (props) => {
 };
 
 ExpandableBox.propTypes = {
-	title: PropTypes.string.isRequired
+	title: PropTypes.string.isRequired,
+	isOpen: PropTypes.bool,
+	clickAction: PropTypes.func
 };
 
 export default ExpandableBox;
